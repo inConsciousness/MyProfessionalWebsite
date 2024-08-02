@@ -1,0 +1,116 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+header {
+    background-color: #34495e; /* Blue */
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.blue-bg {
+    background-color: #2980b9; /* Blue */
+    color: #fff;
+}
+
+.light-yellow-bg {
+    background-color: hsl(48, 88%, 53%); /* Light Yellow */
+    color: #333;
+}
+
+.white-bg {
+    background-color: #fff;
+    color: #333;
+}
+
+.grey-bg {
+    background-color: #bdc3c7; /* Grey */
+    color: #333;
+}
+
+.profile-pic {
+    float: left;
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.bio {
+    overflow: hidden;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #bdc3c7; /* Grey */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Carousel styles */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    scroll-snap-stop: always; /* Ensure proper snapping behavior */
+}
